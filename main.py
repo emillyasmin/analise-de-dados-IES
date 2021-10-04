@@ -5,13 +5,6 @@ def contagem(dicio, key):
         dicio[key] += 1
 
 
-def agrupamento(dicio, key, value):
-    if key not in dicio.keys():
-        dicio[key] = list()
-    if value not in dicio[key]:
-        dicio[key].append(value)
-
-
 def questao(numero, texto):
     print()
     print(f'------------- QUESTÃO {numero} -------------')
@@ -19,13 +12,13 @@ def questao(numero, texto):
     print()
 
 
-def saida(dicio, lista=False):
+def saida(dicio, total=False):
+    tot = 0
     for k, v in dicio.items():
-        if lista:
-            for i in v:
-                print(f'{k}: {i}')
-        else:
-            print(f'{k}: {v}')
+        print(f'{k}: {v}')
+        tot += v
+    if total:
+        print(f'TOTAL: {tot}')
 
 
 # Cada dicionário responde uma questão
@@ -56,16 +49,13 @@ with open('cadastroIES-2011.csv', 'r') as arq:
 
         # Questão 4
         uf = dados[9]
-        nome_IES = dados[2].title()
         if IES == 'Instituto Federal de Educação Ciência e Tecnologia' and reg == 'Nordeste':
-            agrupamento(dados4, uf, nome_IES)
+            contagem(dados4, uf)
 
         # Questão 5
-        pag = dados[33]
-        if uf == 'RN':
-            agrupamento(dados5, nome_IES, pag)
-            if pag[0:3] != 'www':
-                dados5[nome_IES] = ['não possui']
+        cat_adm = dados[20]
+        contagem(dados5, cat_adm)
+
 
 # Saída de dados
 questao(1, 'Quais são os tipos de instituições de ensino superior e '
@@ -78,8 +68,9 @@ saida(dados2)
 questao(3, 'Quantas universidades existem na capital? E no interior?')
 saida(dados3)
 
-questao(4, 'Quais são os institutos federais da região nordeste, divididos por estado?')
-saida(dados4, lista=True)
+questao(4, 'Quantos institutos federais possui a região nordeste, divididos por estado?')
+saida(dados4, total=True)
 
-questao(5, 'Quais as páginas eletrônicas de cada instituição do Rio Grande do Norte?')
-saida(dados5, lista=True)
+questao(5, 'Qual o total de instituições de ensino superior, divididas '
+           'por categoria administrativa?')
+saida(dados5, total=True)

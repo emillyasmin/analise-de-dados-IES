@@ -52,5 +52,5 @@ C) Definição das questões
 1) Quais são os tipos de instituições de ensino superior e quantas de cada existem no Brasil?
 2) Qual a região que possui mais faculdades e qual a que possui menos?
 3) Quantas universidades existem na capital? E no interior?
-4) Quais são os institutos federais da região nordeste, divididos por estado?
-5) Quais as páginas eletrônicas de cada instituição do Rio Grande do Norte?
+4) Quantos institutos federais possui a região nordeste, divididos por estado?
+5) Qual o total de instituições de ensino superior, divididas por categoria administrativa?
