@@ -1,0 +1,56 @@
+---------- PROJETO 2° ANO ----------
+
+A) Seleção da Base de Dados
+
+Instituições de ensino superior
+https://dados.gov.br/dataset/instituicoes-de-ensino-superior
+
+B) Visualização do Dicionário de Dados
+
+0-Ano
+1-IES
+2-Nome da Instituição
+3-SIGLA
+4-CNPJ da Instituição
+5-Reg
+6-Regiao
+7-CODIBGE
+8-Unidade da Federação
+9-Sigla da UF
+10-Município da IES
+11-CODMUNIC
+12-CODMUNIC12
+13-Loc
+14-Localização
+15-Cod_OrgAcad
+16-Organização Acadêmica
+17-CO_Rede
+18-Rede
+19-Cod_dep
+20-Categoria Administrativa
+21-dep5
+22-Categoria Administrativa da IES
+23-Mant
+24-Mantenedora
+25-CEP
+26-Endereço
+27-Número
+28-Complementação do Endereço
+29-Bairro
+30-Telefone
+31-FAX
+32-EMAIL
+33-Página Eletrônica
+34-Nome do Procurador Institucional da IES
+35-CPF do Procurador
+36-Telefone do Procurador
+37-EMAIL do Procurador
+38-Número de Instituições
+
+C) Definição das questões
+
+1) Quais são os tipos de instituições de ensino superior e quantas de cada existem no Brasil?
+2) Qual a região que possui mais faculdades e qual a que possui menos?
+3) Quantas universidades existem na capital? E no interior?
+4) Quais são os institutos federais da região nordeste, divididos por estado?
+5) Quais as páginas eletrônicas de cada instituição do Rio Grande do Norte?
