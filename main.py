@@ -1,3 +1,6 @@
+from matplotlib import pyplot
+
+
 def contagem(dicio, key):
     if key not in dicio.keys():
         dicio[key] = 1
@@ -56,6 +59,35 @@ with open('cadastroIES-2011.csv', 'r') as arq:
         cat_adm = dados[20]
         contagem(dados5, cat_adm)
 
+# Gráfico 1
+pyplot.figure(1)
+pyplot.title('Instituições de Ensino Superior')
+pyplot.pie(dados1.values(), labels=dados1.keys())
+pyplot.savefig('questao-1.png')
+
+# Gráfico 2
+pyplot.figure(2)
+pyplot.title('Quantidade de Faculdades por Região')
+pyplot.plot(dados2.keys(), dados2.values(), marker='o')
+pyplot.savefig('questao-2.png')
+
+# Gráfico 3
+pyplot.figure(3)
+pyplot.title('Localização das Universidades Brasileiras')
+pyplot.pie(dados3.values(), labels=dados3.keys())
+pyplot.savefig('questao-3.png')
+
+# Gráfico 4
+pyplot.figure(4)
+pyplot.title('Quantidade de Institutos Federais da Região Nordeste')
+pyplot.bar(dados4.keys(), dados4.values())
+pyplot.savefig('questao-4.png')
+
+# Gráfico 5
+pyplot.figure(5)
+pyplot.title('Categoria Administrativa das Instituições de Ensino Superior')
+pyplot.pie(dados5.values(), labels=dados5.keys())
+pyplot.savefig('questao-5.png')
 
 # Saída de dados
 questao(1, 'Quais são os tipos de instituições de ensino superior e '
