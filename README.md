@@ -1,7 +1,4 @@
 # Análise de dados - Instituições de ensino superior
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/emillyasmin/analise-de-dados-IES/blob/main/LICENSE) 
-
-# Sobre o projeto
 
 Esse projeto foi construído como trabalho final da disciplina de Programação Estruturada e Orientada a Objetos, no 2° ano do Técnico de Nível Médio em Informática do [Campus Apodi](https://portal.ifrn.edu.br/campus/apodi).
 
